@@ -16,12 +16,13 @@ python data_preprocess.py
 ```
 
 # Training
-train the model
+Start training !
 ```shell
 python train.py
 ```
 
 # Testing
+Let's test the trained model!
 ```shell
 python test_prostate_tta.py
 ```
