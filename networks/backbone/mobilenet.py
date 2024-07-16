@@ -143,10 +143,7 @@ class MobileNetV2(nn.Module):
         return x5
 
     def _load_pretrained_model(self):
-        try:
-            pretrain_dict = torch.load("/data/zzz/pretrained_models/mobilenet_v2-6a65762b.pth")
-        except:
-            pretrain_dict = torch.load("./pretrained_models/mobilenet_v2-6a65762b.pth")
+        pretrain_dict = torch.load("./pretrained_models/mobilenet_v2-6a65762b.pth")
         model_dict = {}
         state_dict = self.state_dict()
         for k, v in pretrain_dict.items():
