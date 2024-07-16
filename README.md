@@ -12,15 +12,15 @@ pip install -r requirements.txt
 Download the [prostate datatset](https://liuquande.github.io/SAML/) 
 ```shell
 python data_
-'''
+```
 
 # Training
 train the model
 ```shell
 python train.py
-'''
+```
 
 # Testing
 ```shell
 python test_prostate_tta.py
-'''
+```
