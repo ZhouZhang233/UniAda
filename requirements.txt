@@ -15,4 +15,3 @@ scikit-image==0.19.3
 pytz
 einops
 yacs
-torch==1.8.0
