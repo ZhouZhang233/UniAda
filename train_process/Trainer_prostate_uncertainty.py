@@ -124,7 +124,7 @@ class Trainer(object):
                 output, feat = self.model(data_slice, None)      # D1x2xHxW
 
                 output = torch.tanh(output)                     # D1x2xHxW
-                evidence = torch.exp(output / num_class)
+                evidence = torch.exp(output * num_class)
                 alpha = evidence + 1                            # D1x2xHxW
                 S = torch.sum(alpha, dim=1, keepdim=True)       # D1x1xHxW
                 uncertainty = num_class / S                     # D1x1xHxW
@@ -266,7 +266,7 @@ class Trainer(object):
             output, feat = self.model(image, target_map)
 
             output = torch.tanh(output)
-            evidence = torch.exp(output / num_class)
+            evidence = torch.exp(output * num_class)
             alpha = evidence + 1
             S = torch.sum(alpha, dim=1, keepdim=True)
             uncertainty = num_class / S
