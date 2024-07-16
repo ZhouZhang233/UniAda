@@ -18,7 +18,7 @@ python data_preprocess.py
 # Training
 Start training !
 ```shell
-python train.py
+python train.py --data_dir path/to/data
 ```
 
 # Testing
