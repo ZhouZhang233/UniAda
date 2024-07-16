@@ -1,5 +1,5 @@
 # UniAda
-The offical implemetation of "UniAda: Domain Unifying and Adapting Network for Generalizable Medical Image Segmentation"
+The offical implementation of "UniAda: Domain Unifying and Adapting Network for Generalizable Medical Image Segmentation"
 
 
 # Envirenment
