@@ -11,7 +11,7 @@ pip install -r requirements.txt
 # datat preprocessing
 Download the [prostate datatset](https://liuquande.github.io/SAML/) 
 ```shell
-python data_
+python data_preprocess.py
 ```
 
 # Training
