@@ -124,7 +124,7 @@ class Trainer(object):
                 output, feat = self.model(data_slice, None)      # D1x2xHxW
 
                 output = torch.tanh(output)                     # D1x2xHxW
-                evidence = torch.exp(output / 0.25)
+                evidence = torch.exp(output / num_class)
                 alpha = evidence + 1                            # D1x2xHxW
                 S = torch.sum(alpha, dim=1, keepdim=True)       # D1x1xHxW
                 uncertainty = num_class / S                     # D1x1xHxW
@@ -134,7 +134,7 @@ class Trainer(object):
                 # uncertainty map
                 feat = F.normalize(feat, dim=1)                          # D1x256x(H/16)x(W/16)
                 weight_volume = self.adjust_conv(output, uncertainty, feat, num_class)
-                output2 = F.conv2d(feat, weight_volume, stride=1, padding=0)                                                           # D1x2x(H/16)x(W/16)
+                output2 = F.conv2d(feat, weight_volume, stride=1, padding=0, bias=False)                                                           # D1x2x(H/16)x(W/16)
                 output2 = F.interpolate(output2, size=output.size()[2:], mode="bilinear", align_corners=True)                    # D1x2xHxW
 
                 output = torch.sigmoid(output)
@@ -266,7 +266,7 @@ class Trainer(object):
             output, feat = self.model(image, target_map)
 
             output = torch.tanh(output)
-            evidence = torch.exp(output / 0.25)
+            evidence = torch.exp(output / num_class)
             alpha = evidence + 1
             S = torch.sum(alpha, dim=1, keepdim=True)
             uncertainty = num_class / S
@@ -275,7 +275,7 @@ class Trainer(object):
             feat = F.normalize(feat, dim=1)                          # D1x256x(H/16)x(W/16)
             weight_volume = self.adjust_conv(output, uncertainty, feat, num_class)
 
-            output2 = F.conv2d(feat, weight_volume, stride=1, padding=0)           # D1x2x(H/16)x(W/16)
+            output2 = F.conv2d(feat, weight_volume, stride=1, padding=0, bias=False)           # D1x2x(H/16)x(W/16)
             output2 = F.interpolate(output2, size=output.size()[2:], mode="bilinear", align_corners=True)      # D1x1xHxW
 
             output = torch.sigmoid(output)
