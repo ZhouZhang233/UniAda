@@ -27,3 +27,5 @@ Let's test the trained model!
 ```shell
 python test_prostate_tta.py
 ```
+
+If you have any questions, please contact: zz_zhang@stu.scu.edu.cn
