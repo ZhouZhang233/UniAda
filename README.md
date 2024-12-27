@@ -42,7 +42,7 @@ Our implementation is heavily drived from [DoFE](https://github.com/emma-sjwang/
   publisher={IEEE}
 }
 @inproceedings{liu2020shape,
-  title={Shape-aware meta-learning for generalizing prostate {MRI} segmentation to unseen domains},
+  title={Shape-aware meta-learning for generalizing prostate MRI segmentation to unseen domains},
   author={Liu, Quande and Dou, Qi and Heng, Pheng-Ann},
   booktitle={Proc. Int. Conf. Med. Image Comput. Comput.-Assist. Interv. (MICCAI)},
   pages={475--485},
