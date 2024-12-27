@@ -29,7 +29,7 @@ python test_prostate_tta.py
 ```
 
 # Acknowledgement
-Our implementation is heavily drived from [DoFE](https://github.com/emma-sjwang/Dofe). The prostate dataset is proposed in [SAML](https://arxiv.org/pdf/2007.02035) and the NPC dataset is proposed in [RobustNPC](https://www.sciencedirect.com/science/article/pii/S016781402300018X). Thanks to their great work!
+Our implementation is heavily drived from [DoFE](https://github.com/emma-sjwang/Dofe). The fundus, prostate, and NPC dataset is proposed in [DoFE](https://ieeexplore.ieee.org/document/9163289), [SAML](https://arxiv.org/pdf/2007.02035), [RobustNPC](https://www.sciencedirect.com/science/article/pii/S016781402300018X), respectively. Thanks to their great work!
 ```shell
 @article{wang2020dofe,
   title={Do{FE}: Domain-oriented feature embedding for generalizable fundus image segmentation on unseen datasets},
