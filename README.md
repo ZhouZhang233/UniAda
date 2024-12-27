@@ -31,7 +31,7 @@ python test_prostate_tta.py
 If you have any questions, please contact me! (zz_zhang95@163.com)
 
 # Acknowledgement
-Our implementation is heavily drived from [DoFE]{https://github.com/emma-sjwang/Dofe}. The prostate dataset is proposed in [SAML](https://arxiv.org/pdf/2007.02035) and the NPC dataset is proposed in [RobustNPC](https://www.sciencedirect.com/science/article/pii/S016781402300018X). Thanks to their great work.
+Our implementation is heavily drived from [DoFE](https://github.com/emma-sjwang/Dofe). The prostate dataset is proposed in [SAML](https://arxiv.org/pdf/2007.02035) and the NPC dataset is proposed in [RobustNPC](https://www.sciencedirect.com/science/article/pii/S016781402300018X). Thanks to their great work.
 ```shell
 
 @inproceedings{liu2020shape,
