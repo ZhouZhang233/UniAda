@@ -29,3 +29,18 @@ python test_prostate_tta.py
 ```
 
 If you have any questions, please contact me! (zz_zhang95@163.com)
+
+# Acknowledgement
+Our implementation is heavily drived from [DoFE]. The public prostate dataset is proposed in [SAML](https://arxiv.org/pdf/2007.02035) and the NPC dataset is proposed in [RobustNPC](https://www.sciencedirect.com/science/article/pii/S016781402300018X). Thanks to their great work.
+'''
+
+@article{LUO2023109480,
+title = {Deep learning-based accurate delineation of primary gross tumor volume of nasopharyngeal carcinoma on heterogeneous magnetic resonance imaging: A large-scale and multi-center study},
+journal = {Radiotherapy and Oncology},
+volume = {180},
+pages = {109480},
+year = {2023},
+issn = {0167-8140},
+author = {Xiangde Luo and Wenjun Liao and Yuan He and Fan Tang and Mengwan Wu and Yuanyuan Shen and Hui Huang and Tao Song and Kang Li and Shichuan Zhang and Shaoting Zhang and Guotai Wang},
+}
+'''
